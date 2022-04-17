@@ -1,0 +1,98 @@
+* { box-sizing:border-box; }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+body {
+  background: white;
+  font:300 15px/24px "Open Sans", sans-serif;
+  color:#bbb;
+
+}
+
+.keyboard {
+  margin:30px auto;
+  width:90%;
+  height:400px;
+  padding:30px 80px;
+}
+
+.key-row {
+  display:-webkit-flex;
+  margin:0 auto 0px;
+  line-height:50px;
+}
+
+.key, .arrowkey-container {
+    margin:0 0px 0 0; 
+    text-align:center;
+}
+
+.key { 
+  background:#444;
+  color:#eee;
+  transition:0.1s;
+  align-items:center;
+  align-content:center;
+  height:57px;
+  border:1px solid;
+  cursor:pointer;
+  text-align:center;
+  padding:0px;
+  font-size:20px;
+}
+
+.key:hover{
+    background: #333;
+}
+
+.active{
+    background: #333;
+}
+
+.relative{
+    position:relative;
+}
+
+.relative-b{
+    margin: 0px;
+    position: relative;
+    bottom: -20px;
+}
+
+.relative-t{
+    margin: 0px;
+    position: relative;
+    top: -15px;
+}
+
+.border-b{
+    border-bottom: 0px;
+}
+
+.border-t{
+    border-top:0px;
+}
+
+.key:active { transform:translateY(1px); background:#333; box-shadow:0 1px 0 #000;}
+
+.one { flex:1; } 
+.two { flex:2; }
+.two-half { flex:2.5; }
+.three { flex:3; }
+.nine { flex:9; }
+
+.key-row .key:last-child { margin:0; }
+
+.l { padding-left:12px; }
+.r { padding-right:2px; }
+
+textarea{
+    width:100%;
+    height: 400px;
+    margin-bottom:10px;
+}
+
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
